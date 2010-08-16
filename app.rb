@@ -2,10 +2,9 @@ require 'rubygems'
 require 'haml'
 require 'digest/sha1'
 require 'sinatra/base'
+require 'password'
 
 require 'stringio'
-
-SALT = 'ytlas-123'
 
 module Kernel
   def capture_stdout(setup, command)
