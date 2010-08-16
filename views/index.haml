@@ -1,0 +1,31 @@
+%html
+  %head
+    %title CLI
+    %link{:rel=>"stylesheet",:type=>"text/css",:href=>"style.css",:media=>"screen",:title=>"Default"}
+    %script{:type=>"text/javascript",:src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+    %script{:type=>"text/javascript",:src=>"jquery.hotkeys-0.7.9.js"}
+    %script{:type=>"text/javascript",:src=>"jquery.browser.js"}
+    %script{:type=>"text/javascript",:src=>"cli.js"}
+  %body
+    #pagealert{:title=>"Press any key for next page of text"} --More--
+    #indicators
+      %span#alt-indicator Alt-
+      %span#ctrl-indicator Ctrl-
+      %span#scroll-indicator SCR LOCK
+    #screen
+      #display
+        #welcome
+          %h1 CLI
+        %noscript
+          %p
+            Sorry, CLI requires JavaScript to work. Please turn on JavaScript.
+      #bottom_line
+        :preserve
+          <span id="inputline"><span id="prompt"></span><span id="lcommand"></span><span id="cursor" >&nbsp;</span><span id="rcommand"></span></span><span id="spinner"></span>
+    #credit
+      Original CLI2 by &nbsp;
+      %a{:href=>"http://thrind.xamai.ca"}> Rod McFarland
+      \. RCLI by &nbsp;
+      %a{:href=>"http://www.kevingisi.com"}> Kevin W. Gisi
+      \. Further modifications by &nbsp;
+      %a{:href=>"http://www.techkid.co.uk"}> TechKid

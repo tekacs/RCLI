@@ -1,0 +1,219 @@
+html
+  height: 99%
+
+
+body
+  height: 99%
+  background-color: #000
+  font-family: "Courier New",Courier,monospace
+  margin: 0 15px
+  overflow: hidden
+  padding: 0
+
+
+pre, td, th, p
+  color: #FFF
+  font-family: "Courier New",Courier,monospace
+  font-size: 1em
+
+
+div
+  color: #FFF
+  font-family: "Courier New",Courier,monospace
+  font-size: 1em
+  margin-bottom: 1em
+  margin-top: 0em
+
+  &#screen
+    background-color: #000
+    height: 99%
+    margin: 2px
+    overflow: hidden
+    padding: 0
+
+
+table
+  margin-bottom: 1em
+  margin-top: 0em
+
+
+pre, td, p
+  background-color: transparent
+
+
+code, p, span, td, th
+  font-size: 1em
+
+
+p, div#display, ul
+  margin: 0
+
+
+div
+  &#screen
+    p, span, a
+      white-space: pre-wrap
+
+    p.error
+      color: red
+
+    li
+      list-style: none
+
+  &#welcome
+    display: none
+
+
+h1, h2
+  letter-spacing: 5px
+  //background-color: #FFF
+  //color: #000
+
+
+h3
+  color: #FFF
+  text-decoration: underline
+  margin: 5px 0
+
+
+h4, h5, h6
+  text-decoration: none
+  margin: 0
+
+
+a
+  color: #FFF
+  cursor: pointer
+  font-weight: bold
+  text-decoration: none
+
+  &:visited
+    color: #FFF
+    cursor: pointer
+    font-weight: bold
+    text-decoration: none
+
+
+.linky
+  color: #FFF
+  cursor: pointer
+  font-weight: bold
+  text-decoration: none
+
+
+a:hover, span.linky:hover, td.linky:hover
+  background-color: #FFF
+  color: #000
+
+
+table
+  border-collapse: collapse
+
+
+td
+  padding: 0 1em 0 1em
+
+
+.stealth
+  background-color: #000
+  border: 0px
+  color: #000
+  color: black
+  height: 0px
+  width: 0px
+  opacity: 0
+
+
+#cursor
+  font-weight: normal
+  background-color: #FFF
+  color: #000
+
+
+div
+  &#pagealert
+    background-color: #FFF
+    bottom: 0px
+    bottom: 2px
+    color: #000
+    left: 2px
+    margin: 0
+    padding: 0
+    position: absolute
+    text-align: center
+    visibility: hidden
+    width: auto
+
+  &#indicators
+    bottom: 0px
+    bottom: 2px
+    left: 2px
+    margin: 0
+    padding: 0
+    position: absolute
+    text-align: center
+
+    span
+      background-color: #FFF
+      color: #000
+      display: none
+
+
+#spinner
+  margin-left: 1em
+  padding: 0
+  display: none
+  font-weight: bold
+  line-height: 0px
+
+
+div#cform
+  height: 1px
+  left: 0
+  position: absolute
+  top: 0
+  width: 1px
+
+
+img
+  color: #FFF
+  font-size: x-small
+
+  &.comic
+    background: white
+    padding: 5px
+
+
+iframe
+  margin: 5px 0
+
+
+form#searchform input
+  &[type=text]
+    background-color: #000
+    border: 1px solid #FFF
+    color: #FFF
+    font-family: "Courier New",Courier,monospace
+    width: 100px
+
+  &[type=submit]
+    background-color: #FFF
+    border: 1px solid #000
+    color: #000
+    font-family: "Courier New",Courier,monospace
+    font-size: 1em
+
+
+div#credit
+  position: absolute
+  bottom: 0
+  color: #FFF
+  font-size: xx-small
+  opacity: .25
+
+  &:hover
+    opacity: .75
+
+  a
+    font-size: xx-small
+    text-decoration: underline
